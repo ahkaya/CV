@@ -1,0 +1,351 @@
+@import url('http://fonts.cdnfonts.com/css/silkscreen');
+:root{
+    --mainTextColor:#000;
+    --secondaryTextColor:(51 51 51);
+    --mainLinkColor:#0da2b8;
+    --mainBorderColor:rgb(218 218 218);
+    --mainBgColor:rgb(249, 250, 251);
+
+    --mainTextColorLight:#000;
+    --secondaryTextColorLight:(51 51 51);
+    --mainLinkColorLight:#0da2b8;
+    --mainBorderColorLight:rgb(218 218 218);
+    --mainBgColorLight:rgb(249, 250, 251);
+
+    --mainTextColorDark:white;
+    --secondaryTextColorDark:lightgray;
+    --mainLinkColorDark:#0da2b8;
+    --mainBorderColorDark:rgb(218 218 218);
+    --mainBgColorDark:black;
+    --pointerter: pointer, default;
+    --pointerterp: url('/assets/images/lightningson.png'), default;
+    --skillsBg:  #0da2b8;
+
+    --skillsPBg:  #eef609;
+
+    --skillsBgImg:linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
+        transparent 75%,
+        transparent);
+
+        --skillsPBgImg:linear-gradient(
+            -45deg,
+            rgba(230, 15, 15, 0.2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 3, 3, 0.2) 50%,
+            rgba(255, 0, 0, 0.2) 75%,
+            transparent 5%,
+            transparent);
+
+    --ppNormal:url('/assets/images/profile-pic.png');
+    --ppPoke:url('/assets/images/pokeprofile-pic.png');
+}
+
+*{
+    font-family: 'Silkscreen', sans-serif;
+    line-height: 1.5em;
+    background-color: var(--mainBgColor);
+    color: var(--mainTextColor);
+    
+}
+* a{
+  cursor: var(--pointerter);
+  
+}
+body{
+  margin:0px;
+}
+#main--section {
+    display: flex;
+    padding-left: 1em;
+    padding-top: 1em;
+    font-size: 90%;
+}
+#main--section p, h2 {
+    padding-left: 2em;
+    padding-top: 0.5em;
+}
+#main--section h2:hover {
+  color:var(--mainLinkColor);
+  transition: 0.3s;
+}
+
+
+#profile-pic{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+#profile-pic:hover{
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    transition: 0.7s;
+    border-color:var(--mainTextColor) ;
+    border-width: 2px;
+    border-style: dashed;
+    
+}
+#container{
+    padding-left: 25%;
+    max-width: 700px;
+    align-items: center;
+    margin: -15px 0px -15px -15px;
+    padding-bottom: 5%;
+}
+#socials {
+    padding-top: 3%;
+    display: flex;
+    gap: 5em;
+    padding-left: 25%;
+}
+
+
+#socials a{ 
+    text-decoration: none;
+    color: var(--mainTextColor);
+    
+}
+#socials a:hover{ 
+    color: var(--mainLinkColor);
+    transition: 0.3s;
+}
+#skills{
+    padding-top: 2.5em;
+    font-size: 15px;
+    list-style-type: none;
+}
+
+#skills h2:hover{ 
+  color: var(--mainLinkColor);
+  font-size: 160%;
+  transition: 0.4s;
+}
+#skills li{
+    padding-top: 0.7em;
+    font-size: 15px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*skills progress bar*/  
+.meter {
+    box-sizing: content-box;
+    height: 20px; /* Can be anything */
+    position: relative;
+    background: #555;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  }
+  .meter > span {
+    display: flex;
+    height: auto;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: var(--skillsBg);
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.26),
+      inset 0 -2px 6px rgba(107, 102, 102, 0.4);
+    position: relative;
+    overflow: hidden;
+  }
+  .meter > span:after,
+  .animate > span > span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: var(--skillsBgImg);
+    z-index: 1;
+    background-size: 50px 50px;
+    animation: move 2s linear infinite;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .animate > span:after {
+    display: none;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+  
+  
+  
+  .nostripes > span > span,
+  .nostripes > span::after {
+    background-image: none;
+  }
+  
+  #page-wrap {
+    width: 490px;
+    margin: 80px auto;
+  }
+ 
+  
+  
+/*skills progress bar end*/  
+
+#workhistory{
+    padding-top: 1.5em;
+    font-size: 15px;
+    list-style-type: none;
+}
+#workhistory li{
+    padding-top: 0.7em;
+    font-size: 13px;
+    list-style-type: none;
+    text-decoration: none;
+}
+#workhistory h2:hover{
+    color: var(--mainLinkColor);
+    font-size: 160%;
+    transition: 0.4s;
+
+}
+
+#education{
+    padding-top: 1.5em;
+    font-size: 15px;
+    list-style-type: none;
+}
+#education li{
+    padding-top: 0.7em;
+    font-size: 13px;
+    list-style-type: none;
+    text-decoration: none;
+}
+#education h2:hover{
+    color: var(--mainLinkColor);
+    font-size: 160%;
+    transition: 0.4s;
+
+}
+#toggle-button{
+    position:absolute;
+    top:3%;
+    right: 28%;
+    color:var(--mainLinkColor);
+}
+  .dark-mode {
+    --mainTextColor:var(--mainTextColorDark);
+    --secondaryTextColor:var(--secondaryTextColorDark);
+    --mainLinkColor:var(--mainLinkColorDark);
+    --mainBorderColor: var(--mainBorderColorDark);
+    --mainBgColor:var(--mainBgColorDark);
+  }
+
+
+
+ 
+  svg{
+    background:var(--ppNormal);
+    background-size:cover;
+    width:145px; 
+    height:auto;
+    display:flex;
+    border-radius: 50%;
+    
+  }
+  text{
+    font-size:10px;
+    transition:font-size .4s ease-out;
+    font-weight:900;
+    font-family:arial;
+  }
+  svg:hover text{
+    transition:font-size .4s ease-in;
+    font-size: 300px;
+  
+  }
+
+  #rectfill{
+    fill: var(--mainBgColor);
+}
+
+
+#poke-button{
+    position:absolute;
+    top:7%;
+    right: 28%;
+    color:orange;
+    background-color: #eef609;
+}
+
+
+  .pokemon-mode {
+   
+
+    cursor:url('/assets/images/pikacursorson.png'), auto;
+
+    --skillsBg:var(--skillsPBg);
+    --skillsBgImg:var(--skillsPBgImg);
+    --ppNormal:var(--ppPoke);
+    --pointerter:var(--pointerterp);
+    --mainLinkColor: red;
+  }
+
+
+  .pokemon-mode::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  .pokemon-mode::-webkit-scrollbar-track {
+    background-color: var(--mainBgColor);
+    border-radius: 100px;
+  }
+  
+  .pokemon-mode::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-image: linear-gradient(180deg, var(--mainLinkColor) 0%, #fff200 99%);
+  }
+
+
+
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: var(--mainBgColor);
+    border-radius: 100px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-image: linear-gradient(180deg, var(--mainLinkColor) 0%, #708ad4 99%);
+  }
+    
+    
+    /*cursor:url('/assets/images/lightning.png'),pointer ;*/
+    /* The second value here is a fallback. */
+    
+      
+    /* You may need coordinates to adjust the pointer
+    for example, the custom cursor is circular and you want
+    the middle to be where you click */
+   /* cursor: url(target.svg) 15 15, move;*/
+      
+  
+

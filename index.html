@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmet Kaya CV</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <script type="text/javascript" src="/script.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        
+
+        <section id="main--section">
+            <button id="toggle-button" onmouseover="toggleFunction()" onclick="myFunction()" >Switch to Dark Mode</button> 
+            <button id="poke-button"  onclick="pokeFunction()" >Activate Pokemon Mode</button>  
+                
+            <!-- <img id="profile-pic" src="/assets/images/profile-pic.png" alt=""> -->
+            <svg onmouseover="ppHover()" onmouseout="ppOut()" viewbox="0 0 50 50" width="50" height="50">
+                <defs>
+                  <mask id="mask" x="0" y="0" width="50" height="50">
+                    <rect x="0" y="0" width="50" height="50" fill="#fff"/>
+                    <text id="svg" x="15" text-anchor="middle" y="50" dy="0">A</text>
+                    <text id="svg1" x="20" text-anchor="middle" y="50" dy="0">H</text>
+                    <text id="svg2" x="25" text-anchor="middle" y="50" dy="0">M</text>
+                    <text id="svg3" x="30" text-anchor="middle" y="50" dy="0">E</text>
+                    <text id="svg4" x="35" text-anchor="middle" y="50" dy="0">T</text>
+                  </mask>
+                </defs>
+                <rect id="rectfill" x="0" y="0" width="50" height="50" mask="url(#mask)" fill-opacity="1" />
+            </svg>
+
+            <div>
+                <h2 onmouseover="ppHover()" onmouseout="ppOut()" id="name">Ahmet Kaya</h2>
+                 <p> PhD Candidate (International Trade and Logistics) </br>Frontend Developer Wannabe 
+                 </p>
+            </div>
+           
+        </section>
+
+        <section id="socials">
+          
+            <a href="#">Twitter</a>
+            <a href="https://www.linkedin.com/in/ahmet-kaya-14336366/">Linkedin</a>
+            <a href="#">Resume Download</a>
+        </section>
+
+        <section id="skills">
+            <h2>Skills and Qualifications</h2>
+            <ul>
+                <li><div class="meter">
+                    <span style="width: 35%">React</span>
+                  </div>
+                </li>
+
+                <li><div class="meter">
+                    <span style="width: 75%">HTML, CSS, JS</span>
+                    </div>
+                </li>
+                <li><div class="meter">
+                    <span style="width: 60%">Bootstrap, Material UI, JSX, NextJS</span>
+                  </div></li>
+            </ul>
+        </section>
+
+        <section onclick="workh()" id="workhistory">
+            <h2>Experiences</h2>
+            <ul id="wul">
+                <li><b>04/2019 - Present</b> &nbsp &nbsp &nbsp Research Assistant - Tarsus University</li>
+                <li><b>07/2018 - 07/2019</b> &nbsp &nbsp &nbsp Project Research Assistant - Bogazici University</li>
+                <li><b>06/2014 - 09/2014</b> &nbsp &nbsp &nbsp Frontend Developer Trainee - iGoa Digital Advertising Agency</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><b>09/2019 - Present</b> &nbsp &nbsp &nbsp International Trade and Logistics PhD - Tarsus University</li>
+                <li><b>09/2016 - 08/2019</b> &nbsp &nbsp &nbsp International Trade Management MA - Bogazici University</li>
+                <li><b>09/2011 - 06/2015</b> &nbsp &nbsp &nbsp Business Informatics - Istanbul Bilgi University</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Certificates</h2>
+            <ul>
+                <li><b>**/**** </b> &nbsp &nbsp &nbsp IELTS Academic - Overall Score: 6</li>
+                <li><b>**/**** </b> &nbsp &nbsp &nbsp TOEFL IBT - Overall Score: 85 </li>
+                <li><b>**/**** </b> &nbsp &nbsp &nbsp QlikView BI Developer and Enduser Training </li>
+            </ul>
+        </section>
+
+
+    </div>
+    
+</body>
+
+</html>
