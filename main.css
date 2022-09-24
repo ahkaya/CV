@@ -18,7 +18,7 @@
     --mainBorderColorDark:rgb(218 218 218);
     --mainBgColorDark:black;
     --pointerter: pointer, default;
-    --pointerterp: url('/assets/images/lightningson.png'), default;
+    --pointerterp: url('lightningson.png'), default;
     --skillsBg:  #0da2b8;
 
     --skillsPBg:  #eef609;
@@ -43,8 +43,8 @@
             transparent 5%,
             transparent);
 
-    --ppNormal:url('/assets/images/profile-pic.png');
-    --ppPoke:url('/assets/images/pokeprofile-pic.png');
+    --ppNormal:url('profile-pic.png');
+    --ppPoke:url('pokeprofile-pic.png');
 }
 
 *{
@@ -297,7 +297,7 @@ body{
   .pokemon-mode {
    
 
-    cursor:url('/assets/images/pikacursorson.png'), auto;
+    cursor:url('pikacursorson.png'), auto;
 
     --skillsBg:var(--skillsPBg);
     --skillsBgImg:var(--skillsPBgImg);
@@ -338,7 +338,12 @@ body{
   }
     
     
-    /*cursor:url('/assets/images/lightning.png'),pointer ;*/
+    /*cursor:url('/
+
+
+
+
+/images/lightning.png'),pointer ;*/
     /* The second value here is a fallback. */
     
       
