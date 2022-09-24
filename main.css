@@ -43,8 +43,8 @@
             transparent 5%,
             transparent);
 
-    --ppNormal:url("profile-pic.png");
-    --ppPoke:url("pokeprofile-pic.png");
+    --ppNormal:url('profile-pic.png');
+    --ppPoke:url('pokeprofile-pic.png');
 }
 
 *{
